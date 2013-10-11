@@ -1,0 +1,186 @@
+
+
+
+#tooltip{
+	z-index: 200;
+}
+
+#close{
+	 position: absolute;
+	 z-index: 200;
+	 right: 35px;
+	 top: 10px;
+}
+
+.play-icon{
+	position: absolute;
+ z-index: 200;
+}
+
+.pause-icon{
+	
+	position: absolute;
+ z-index: 200;
+ width: 90px;
+ height: 90px;
+ display: block;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ margin: 0px 0 0 -100px;
+ background: url('http://education2.freeformers.com/maxbye/whitedog/img/cl-nuggets-sprite_tcm864-1140422.png') no-repeat right -880px;
+}
+
+.soundPause{
+	margin: -17px 0 0 -45px;
+}
+
+
+.descript{
+	color:white;
+	font-size:16px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.descript:hover{
+	text-decoration:underline
+}
+
+.pauseButton{
+	position: absolute;
+	z-index: 200;
+	right: 50px;
+	top: 20px;
+}
+
+.window-icon{
+	z-index: 200;
+	width: 90px;
+	height: 90px;
+	display: block;
+	position: absolute;
+	top: 37%;
+	left: 60%;
+	opacity: 0.9;
+	margin: 0px 0 0 -100px;
+	background: url('http://education2.freeformers.com/maxbye/whitedog/img/newWindow.png') no-repeat right -880px;	
+}
+
+.pause-icon:hover {
+background-position: right -788px;	
+}
+
+a:hover .window-icon {
+background-position: right -788px;
+}
+
+
+
+/* JQuery Switch CSS options */
+.backWindow{
+  position: absolute;
+  left: 65px;
+  top: 240px;
+  }
+  
+  .backWindowImage {
+  height: 150px;
+  width: 250px;
+  background-image: url('http://family.freeformers.com/max/whitedog/img/backWindow.png');
+  background-size: 90%;
+  background-position: 140% 30%;
+  background-repeat: no-repeat;
+  }
+  
+  .backWindowImage:hover{
+    background-image:url('http://family.freeformers.com/max/whitedog/img/backWindowHover.png');
+  }
+  
+.frontTitle{
+  padding-left: 10px;
+  position: absolute;
+  float: left;
+  background-color: black;
+  color: white;
+  text-align: left;
+  }
+
+
+.backCover{
+height: 365px; 
+width: 550px; 
+margin-left: -100px; 
+background-color: black; 
+opacity: 0.7; 
+position: absolute;
+}
+
+.backText{
+  color: white;
+position: absolute;
+padding-left: 10px; 
+width: 310px;
+} 
+
+
+.panel { 
+    position: relative;
+    font-size: .8em;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+}
+/* -- make sure to declare a default for every property that you want animated -- */
+/* -- general styles, including Y axis rotation -- */
+.panel .front {
+    position: absolute;
+    top: 0;
+    z-index: 900;
+    width: inherit;
+    height: inherit;
+    text-align: center;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    /* -- transition is the magic sauce for animation -- */
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.panel.flip .front {
+    z-index: 900;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+}
+.panel .back {
+    position: absolute;
+    top: 0;
+    z-index: 800;
+    width: inherit;
+    height: inherit;
+    -webkit-transform: rotateY(-180deg);
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+
+    -moz-transform: rotateY(-180deg);
+    -moz-transform-style: preserve-3d;
+    -moz-backface-visibility: hidden;
+    /* -- transition is the magic sauce for animation -- */
+    -o-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.panel.flip .back {
+    z-index: 1000;
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg);
+}
+
+/* /JQuery Switch CSS options */
